@@ -1,80 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Student Attendance Tracker</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Table</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="index.js"></script>
 </head>
-
 <body>
-  <%   function capitalizeWords(str) { %>
-  <%   let words = str.split(' '); %>
-  <%   let capitalizedWords = words.map(word => { %>
-  <%     return word.charAt(0).toUpperCase() + word.slice(1).toLowerCase(); %>
-  <%   }); %>
-  <%   return capitalizedWords.join(' '); %>
-  <% } %>
-  <%  %>
-  <h1>Student Attendance Tracker</h1>
-
-    <button id="absent-all">Make all Absent</button>
-    <button id="present-all">Make all Present</button>
-
-  <form id="attendanceForm" action="/add" method="POST">
-    <label for="date">Date:</label>
-    <input type="date" id="date" name="date" required />
-    <br />
-
-    <input type="radio" id="working" name="college" value="Working">
-    <label for="working">Working</label><br>
-    <input type="radio" id="holiday" name="college" value="Holiday">
-    <label for="holiday">Holiday</label>
-    <!-- Display student list dynamically -->
-    <fieldset>
-      <legend>Student List</legend>
-      <div id="studentList">
-        <% students.forEach(student => { %>
-          <input type="checkbox" name="student" value="<%= student['roll-number'] %>" id="<%= student['roll-number'] %>" />
-          <label for="<%= student['roll-number'] %>"><%= student['roll-number'].slice(-2) %> <%= capitalizeWords(student.name) %></label>
-          <br />
-        <% }) %>
-      </div>
-    </fieldset>
-
-    <br />
-    <button type="submit">Submit</button>
-  </form>
-  <script>
-        window.onload = function () {
-        // Get all checkboxes with the name "students"
-        var checkboxes = document.querySelectorAll('input[name="student"]');
-
-        // Loop through each checkbox and set the "checked" attribute to true
-        function checkAll() {
-            checkboxes.forEach(function (checkbox) {
-                checkbox.checked = true;
-            });
-        }
-        function checkOffAll() {
-            checkboxes.forEach(function (checkbox) {
-                checkbox.checked = false;
-            });
-        }
-        var radioBtn = document.getElementById('holiday');
-      radioBtn.addEventListener('change', function () {
-          if (radioBtn.checked) {
-            checkOffAll();
-          }
-      });
-        // Add a click event listener to the button
-        document.getElementById('present-all').addEventListener('click', checkAll);
-        document.getElementById('absent-all').addEventListener('click', checkOffAll);
-
-
-    };
-  </script>
-  
+    <h1>Attendance Table</h1>
+    <table id="attendanceTable" border="1">
+        <thead>
+            <tr>
+                <th>Roll Number</th>
+                <th>Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Data will be dynamically added here -->
+        </tbody>
+    </table>
 </body>
-
 </html>
