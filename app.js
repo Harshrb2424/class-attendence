@@ -45,7 +45,7 @@ app.post('/add', (req,res) => {
     fs.writeFileSync('./public/attendance.json', JSON.stringify(existingData, null, 2));
     fs.writeFileSync(monthlyfile, JSON.stringify(monthlyexistingData, null, 2));
 
-    res.redirect('/');
+    res.redirect('/add');
 })
 
 // API endpoint to get the current attendance data

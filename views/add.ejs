@@ -104,9 +104,9 @@ legend {
     <label for="date">Date:</label>
     <input type="date" id="date" name="date" required />
 
-    <input type="radio" id="working" name="college" value="Working">
+    <input type="radio" id="working" name="college" value="Working" required>
     <label for="working">Working</label><br>
-    <input type="radio" id="holiday" name="college" value="Holiday">
+    <input type="radio" id="holiday" name="college" value="Holiday" required>
     <label for="holiday">Holiday</label>
     <!-- Display student list dynamically -->
     <fieldset>
@@ -134,6 +134,7 @@ legend {
                 checkbox.checked = true;
             });
         }
+        checkAll();
         function checkOffAll() {
             checkboxes.forEach(function (checkbox) {
                 checkbox.checked = false;

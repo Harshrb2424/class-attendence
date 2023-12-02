@@ -4,7 +4,7 @@ $(document).ready(function () {
     $.getJSON("attendance.json", function (attendanceData) {
       $.each(students, function (_, student) {
         $("#attendanceTable tbody").append(
-          '<tr class="student" id="' +
+          '<tr class="student" id="student_' +
             student["roll-number"] +
             '">' +
             "<td>" +
@@ -23,11 +23,11 @@ $(document).ready(function () {
             );
             $.each(students, function (_, student) {
                 if (attendance["student"].includes(student['roll-number'])) {
-                    $("#"+student['roll-number']).append(
+                    $("#student_"+student['roll-number']).append(
                         "<th>" + "P" + "</th>"
                       );
                 } else {
-                    $("#"+student['roll-number']).append(
+                    $("#student_"+student['roll-number']).append(
                         "<th>" + "A" + "</th>"
                       );
                 }
@@ -39,7 +39,15 @@ $(document).ready(function () {
       $('tr.student').each(function() {
         const total_days = $(this).find('th').length;
         const present_days = $(this).find('th:contains("P")').length;
-        $(this).prepend('<td>'+(present_days/total_days*100)+'</td>');
+        const attendancePercentage = (present_days / total_days * 100).toFixed(1);
+    
+        // Add the attendance percentage as a new column
+        $(this).prepend('<td>' + attendancePercentage + '</td>');
+    
+        // Check if attendance percentage is less than 60, and add "low-attd" class
+        if (parseFloat(attendancePercentage) < 60) {
+            $(this).addClass('low-attd');
+        }
     });
     });
   });
