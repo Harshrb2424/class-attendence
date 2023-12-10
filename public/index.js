@@ -1,7 +1,10 @@
 $(document).ready(function () {
   var currentUrl = window.location.href;
   let attendance = "attendance.json";
-  if (currentUrl.endsWith('?Year=2023&Month=11')) {
+  if (currentUrl.endsWith('?Year=2023&Month=10')) {
+    attendance = "attendance-CSM-10-2023.json";
+  }
+  else if (currentUrl.endsWith('?Year=2023&Month=11')) {
     attendance = "attendance-CSM-11-2023.json";
   }
   else if(currentUrl.endsWith('?Year=2023&Month=12')) {
