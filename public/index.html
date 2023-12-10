@@ -17,7 +17,7 @@ h1 {
 }
 
 #attendanceTable {
-  width: 5000px;
+  /* width: 5000px; */
   border-collapse: collapse;
   margin-top: 20px;
 }
@@ -41,7 +41,31 @@ h1 {
 }
 
 #attendanceTable th, #attendanceTable td {
+ 
   border: 1px solid #ddd;
+}
+#attendanceTable th {
+  min-width: 100px;
+}
+a {
+      text-decoration: none;
+      color: #3498db; /* Set your desired text color */
+      font-weight: bold;
+      transition: color 0.3s ease; /* Add a smooth color transition */
+    }
+
+    /* Change link color on hover */
+    a:hover {
+      color: #e74c3c; /* Set your desired hover text color */
+    }
+.name{
+  min-width: 300px;
+}
+.nav{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 50px;
 }
 .low-attd {
   color: red;
@@ -55,6 +79,12 @@ h1 {
 </head>
 <body>
     <h1>Attendance Table</h1>
+  <div class="nav">
+    <a href="./?Year=2023">2023</a>
+    <a href="./?Year=2023&Month=10">Oct</a>
+    <a href="./?Year=2023&Month=11">Nov</a>
+    <a href="./?Year=2023&Month=12">Dec</a>
+  </div>
     <table id="attendanceTable" border="1">
         <thead>
             <tr>

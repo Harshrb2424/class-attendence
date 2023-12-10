@@ -1,7 +1,15 @@
 $(document).ready(function () {
+  var currentUrl = window.location.href;
+  let attendance = "attendance.json";
+  if (currentUrl.endsWith('?Year=2023&Month=11')) {
+    attendance = "attendance-CSM-11-2023.json";
+  }
+  else if(currentUrl.endsWith('?Year=2023&Month=12')) {
+    attendance = "attendance-CSM-12-2023.json";
+  }
   // Fetch data from CSM-info.json and attendance.json
   $.getJSON("CSM-info.json", function (students) {
-    $.getJSON("attendance.json", function (attendanceData) {
+    $.getJSON(attendance, function (attendanceData) {
       $.each(students, function (_, student) {
         $("#attendanceTable tbody").append(
           '<tr class="student" id="student_' +
@@ -10,7 +18,7 @@ $(document).ready(function () {
             "<td>" +
             student["roll-number"] +
             "</td>" +
-            "<td>" +
+            "<td class='name'>" +
             student["name"] +
             "</td>" +
             "</tr>"
