@@ -1,15 +1,18 @@
 $(document).ready(function () {
   var currentUrl = window.location.href;
+  const regex = /\?Year=(\d+)&Month=(\d+)/;
+  const match = regex.exec(currentUrl);
+  console.log(match);
   let attendance = "attendance.json";
-  if (currentUrl.endsWith('?Year=2023&Month=10')) {
-    attendance = "attendance-CSM-10-2023.json";
+  if (match) {
+    attendance = `attendance-CSM-${match[2]}-${match[1]}.json`;
   }
-  else if (currentUrl.endsWith('?Year=2023&Month=11')) {
-    attendance = "attendance-CSM-11-2023.json";
-  }
-  else if(currentUrl.endsWith('?Year=2023&Month=12')) {
-    attendance = "attendance-CSM-12-2023.json";
-  }
+  // else if (currentUrl.endsWith('?Year=2023&Month=11')) {
+  //   attendance = "attendance-CSM-11-2023.json";
+  // }
+  // else if(currentUrl.endsWith('?Year=2023&Month=12')) {
+  //   attendance = "attendance-CSM-12-2023.json";
+  // }
   // Fetch data from CSM-info.json and attendance.json
   $.getJSON("CSM-info.json", function (students) {
     $.getJSON(attendance, function (attendanceData) {

@@ -20,7 +20,7 @@ let monthlyAttendanceData = require('./public/attendance-CSM-11-2023.json');
 
 // Serve HTML page for managing attendance
 app.get('/', (req, res) => {
-    res.render('index', { students: data });
+    res.render('index.ejs', { students: data });
 });
 app.get('/add', (req, res) => {
     res.render('add', { students: data });
