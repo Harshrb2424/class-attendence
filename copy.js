@@ -81,7 +81,7 @@ $(document).ready(function () {
       .writeText(
         `CSM B Attendance ${formattedDate} ${formattedTime} \nPresent ${
           selectedRollNumbers.length
-        }: \n${selectedRollNumbers.join(", ")} \n\nAbsent ${
+        }: \n${selectedRollNumbers.join(", ")}.\n\nAbsent ${
           unselectedRollNumbers.length
         }:\n${unselectedRollNumbers.join(", ")}.`
       )
