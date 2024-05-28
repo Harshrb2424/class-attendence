@@ -25,53 +25,45 @@ app.get('/', (req, res) => {
 app.get('/add', (req, res) => {
     res.render('add', { students: data });
 });
+const path = require('path');
 
-app.post('/add', (req,res) => {
-    console.log(req.body);
-    const date = new Date(req.body.date)
-    console.log(date.getMonth() + 1);
-    console.log(date.getFullYear());
-    monthlyfile = `./public/attendance-CSM-${date.getMonth() + 1}-${date.getFullYear()}.json`;
-    
-    // Read the existing data from attendance.json
-    const existingData = JSON.parse(fs.readFileSync('./public/attendance.json', 'utf-8'));
-    const monthlyexistingData = JSON.parse(fs.readFileSync(monthlyfile, 'utf-8'));
-
-    // Add the new data from req.body to the existing data
-    existingData.push(req.body);
-    monthlyexistingData.push(req.body);
-
-    // Write the updated data back to attendance.json
-    fs.writeFileSync('./public/attendance.json', JSON.stringify(existingData, null, 2));
-    fs.writeFileSync(monthlyfile, JSON.stringify(monthlyexistingData, null, 2));
-
-    res.redirect('/add');
-})
-
-// API endpoint to get the current attendance data
-app.get('/api/attendance', (req, res) => {
-  res.json(attendanceData);
+app.get('/copy.html', (req, res) => {
+    const filePath = path.join(__dirname, 'copy.html');
+    res.sendFile(filePath);
 });
 
-// API endpoint to add or edit attendance
-app.post('/api/attendance', (req, res) => {
-  const { date, students } = req.body;
+app.post('/add', (req,res) => {
+  console.log(req.body);
+  const date = new Date(req.body.date);
+  console.log(date.getMonth() + 1);
+  console.log(date.getFullYear());
+  const month = date.getMonth() + 1;
+  const year = date.getFullYear();
+  const monthlyfile = `./public/attendance-CSM-${month}-${year}.json`;
+  
+  // Read the existing data from attendance.json
+  const existingData = JSON.parse(fs.readFileSync('./public/attendance.json', 'utf-8'));
 
-  // Find existing attendance data for the given date
-  const existingAttendance = attendanceData.find(item => item.date === date);
+  // Add the new data from req.body to the existing data
+  existingData.push(req.body);
 
-  if (existingAttendance) {
-    // Update existing attendance
-    existingAttendance.students = students;
+  // Write the updated data back to attendance.json
+  fs.writeFileSync('./public/attendance.json', JSON.stringify(existingData, null, 2));
+
+  // Read or create monthly file
+  let monthlyexistingData = [];
+  if (fs.existsSync(monthlyfile)) {
+      monthlyexistingData = JSON.parse(fs.readFileSync(monthlyfile, 'utf-8'));
   } else {
-    // Add new attendance entry
-    attendanceData.push({ date, students });
+      fs.writeFileSync(monthlyfile, JSON.stringify(monthlyexistingData, null, 2));
   }
 
-  // Save the updated attendance data to the JSON file
-  fs.writeFileSync('./attendance.json', JSON.stringify(attendanceData, null, 2));
+  monthlyexistingData.push(req.body);
 
-  res.json({ success: true, message: 'Attendance updated successfully' });
+  // Write the updated monthly data back to its file
+  fs.writeFileSync(monthlyfile, JSON.stringify(monthlyexistingData, null, 2));
+
+  res.redirect('/add');
 });
 
 app.listen(port, () => {

@@ -1,4 +1,5 @@
 $(document).ready(function () {
+
   var currentUrl = window.location.href;
   const regex = /\?Year=(\d+)&Month=(\d+)/;
   const match = regex.exec(currentUrl);
