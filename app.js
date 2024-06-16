@@ -43,11 +43,7 @@ app.post('/login', (req, res) => {
 });
 
 app.get('/home', (req, res) => {
-  if (req.session.loggedIn) {
     res.render('home', { username: req.session.username });
-  } else {
-    res.redirect('/login');
-  }
 });
 app.get('/schedule', (req, res) => {
   res.render('schedule', { username: req.session.username });

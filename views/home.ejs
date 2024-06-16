@@ -11,10 +11,10 @@
       <section class="title">
         <% if (typeof username !== 'undefined') { %>
         <h4>Hello <%= username %>,</h4>
+        <%- include('components/schedule') %>
         <% } else { %>
         <h1>ATTEND-ME</h1>
         <h5>daily attendance assitance and record traker</h5>
-
         <a href="/login">Sign in</a>
         <% } %>
       </section>
