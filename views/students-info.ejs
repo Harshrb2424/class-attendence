@@ -3,22 +3,26 @@
   <head>
     <title>Home</title>
     <link rel="stylesheet" href="css/style.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   </head>
   <body>
     <%- include('components/header') %> <%- include('components/nav') %>
 
     <main>
-      <section class="schedule">
+      <section class="students-info">
         <h1>Student Info</h1>
         <h2 class="date">Last Updated 10 June 2024</h2>
         <div class="classes">
-          <div class="class">
+          <div class="CSM-A class active">
+            <p class="svg-active"></p>
             <h5>CSM A</h5>
           </div>
-          <div class="class">
+          <div class="CSM-B class active">
+            <p class="svg-active"></p>
             <h5>CSM B</h5>
           </div>
-          <div class="class">
+          <div class="CSM-C class active">
+            <p class="svg-active"></p>
             <h5>CSM C</h5>
           </div>
 
@@ -29,9 +33,13 @@
                 <p>S.No.</p>
                 <p>Roll No.</p>
                 <p>Name</p>
-                <p>Attendence</p>
+                <p>CGPA</p>
+                <p>1.1</p>
+                <p>1.2</p>
+                <p>2.1</p>
             </div>
-            <div class="info">
+            <p class="loading">loading please wait...</p>
+            <!-- <div class="info">
                 <p>1</p>
                 <p>22Q91A6601</p>
                 <p>Harsh RB</p>
@@ -54,10 +62,12 @@
                 <p>22Q91A6601</p>
                 <p>Harsh RB</p>
                 <p>77%</p>
-            </div>
+            </div> -->
         </div>
       </section>
     </main>
     <%- include('components/footer') %>
+    <script type="module" src="js/students-info.js"></script>
+    <script type="module" src="js/svg.js"></script>
   </body>
 </html>

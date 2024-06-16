@@ -150,6 +150,13 @@ main{
     font-weight: 100;
     font-size: 16px;
 }
+.schedule .class{
+    background-color: var(--color-theme-light);
+    color: var(--color-theme-dark);
+}
+.p2{
+    flex-grow: 2;
+}
 .classes{
     display: flex;
     flex-wrap: wrap;
@@ -157,25 +164,46 @@ main{
     padding: 20px 5px;
 }
 .class {
-    background-color: var(--color-theme-light);
-    color: var(--color-theme-dark);
+    /* background-color: var(--color-theme-light);
+    color: var(--color-theme-dark); */
     border-radius: 5px;
     padding: 10px 15px;
 }
+
+.active{
+    background-color: var(--color-theme-light);
+    color: var(--color-theme-dark);
+}
+.inactive{
+    background-color: var(--color-semi-light);
+    color: var(--color-semi-dark);
+}
+
 .class h5{
     font-size: 16px;
 }
 .class h6{
     font-size: 12px;
 }
-
+.students-info .class{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
 .data{
     display: flex;
     flex-direction: column;
     gap: 5px;
+    width: 70vw;
+}
+.info p:nth-child(1), .head p:nth-child(1) {
+    width: 7%;
 }
 .head p, .info p {
-    width: 10%;
+    width: 20%;
+}
+.info p:nth-child(3), .head p:nth-child(3) {
+    width: 50%;
 }
 .head{
     font-weight: bold;
@@ -185,7 +213,6 @@ main{
 }
 .info{
     padding: 5px 10px;
-    background-color: var(--color-semi-light);
     border-radius: 3px;
 }
 .head, .info{
@@ -193,7 +220,10 @@ main{
     gap: 10px;
     justify-content: space-evenly;
 }
+.data .info{
+    background-color: var(--color-semi-light);
 
+}
 
 footer{
     text-align: center;
