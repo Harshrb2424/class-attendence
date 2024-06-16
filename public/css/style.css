@@ -142,20 +142,21 @@ main{
 .schedule{
     width: 100%;
 }
-.schedule h1{
+h1{
     font-weight: 100;
     font-size: 32px;
 }
-.schedule h2{
+h2{
     font-weight: 100;
     font-size: 16px;
 }
 .schedule .class{
     background-color: var(--color-theme-light);
     color: var(--color-theme-dark);
+    min-width: 100px;
 }
-.p2{
-    flex-grow: 2;
+.class-2{
+    width: 200px;
 }
 .classes{
     display: flex;
@@ -197,14 +198,18 @@ main{
     width: 70vw;
 }
 .info p:nth-child(1), .head p:nth-child(1) {
-    width: 7%;
+    width: 5%;
 }
-.head p, .info p {
-    width: 20%;
+.info p:nth-child(2), .head p:nth-child(2) {
+    width: 15%;
 }
 .info p:nth-child(3), .head p:nth-child(3) {
-    width: 50%;
+    width: 40%;
 }
+.head p, .info p {
+    width: 10%;
+}
+
 .head{
     font-weight: bold;
     padding: 8px 10px;
@@ -230,4 +235,13 @@ footer{
     background-color: var(--color-dark);
     color: var(--color-semi-dark);
     padding: 40px 10px;
+}
+
+.access-denied h1{
+    text-transform: uppercase;
+    font-size: 64px;
+    color: var(--color-error-dark);
+}
+.access-denied p{
+    margin-bottom: 15px;
 }
