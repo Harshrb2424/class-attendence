@@ -49,6 +49,12 @@ app.get('/home', (req, res) => {
     res.redirect('/login');
   }
 });
+app.get('/schedule', (req, res) => {
+  res.render('schedule', { username: req.session.username });
+});
+app.get('/students-info', (req, res) => {
+  res.render('students-info', { username: req.session.username });
+});
 
 app.get('/logout', (req, res) => {
   req.session.destroy(err => {

@@ -1,10 +1,24 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Home</title>
-</head>
-<body>
-  <h1>Welcome, <%= username %>!</h1>
-  <a href="/logout">Logout</a>
-</body>
+  <head>
+    <title>Home</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <%- include('components/header') %> <%- include('components/nav') %>
+
+    <main>
+      <section class="title">
+        <% if (typeof username !== 'undefined') { %>
+        <h4>Hello <%= username %>,</h4>
+        <% } else { %>
+        <h1>ATTEND-ME</h1>
+        <h5>daily attendance assitance and record traker</h5>
+
+        <a href="/login">Sign in</a>
+        <% } %>
+      </section>
+    </main>
+    <%- include('components/footer') %>
+  </body>
 </html>

@@ -1,0 +1,12 @@
+<!-- header.ejs -->
+<header>
+    <h3>MRCE</h3>
+    <div class="info">
+        <% if (typeof username !== 'undefined') { %>
+            <h4><%= username %></h4>
+            <a href="/logout">Logout</a>
+            <% } else { %>
+                <a href="/login">Login</a>
+        <% } %>
+    </div>
+</header>
