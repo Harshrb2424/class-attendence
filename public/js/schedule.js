@@ -1,4 +1,5 @@
 $(document).ready(function () {
+  $("a[href='/schedule']").addClass("active");
     // Function to create HTML for class based on classInfo
     function getClassHtml(classInfo) {
       if (classInfo.subject === "LAB") {

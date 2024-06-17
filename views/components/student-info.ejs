@@ -1,0 +1,5 @@
+    <section class="student-info">
+      <h1><%=data.name %></h1>
+      <h2><%=data.section %></h2>
+      <h2>CGPA <%= Object.values(data).filter(value => /^[\d.]+$/.test(value)).map(parseFloat).reduce((acc, curr, idx, arr) => acc + curr / arr.length, 0).toFixed(2) %></h2>
+    </section>

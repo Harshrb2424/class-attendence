@@ -1,4 +1,5 @@
 $(document).ready(function () {
+  $("a[href='/students-info']").addClass("active");
   // Hide the .loading element
   function capitalizeWords(str) {
     // Split the string into an array of words
@@ -70,7 +71,7 @@ $(document).ready(function () {
   // Select all elements with the class 'active' within the 'classes' container
 
   // Fetch the JSON data
-  $.getJSON("../data/students-info-csm-b.json", function (data) {
+  $.getJSON("../data/students-info-CSM.json", function (data) {
     $(".loading").hide();
 
     // ? table creation
