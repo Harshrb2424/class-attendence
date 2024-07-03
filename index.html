@@ -2,63 +2,48 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Attendance Table</title>
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    <script src="index.js"></script>
-    <style>
-      body {
-        font-family: "Arial", sans-serif;
-        margin: 20px;
-      }
+    <title>Class Attendance</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="module" src="index.js"></script>
+    <script>
 
-      h1 {
-        text-align: center;
-      }
-
-      #attendanceTable {
-        width: 5000px;
-        border-collapse: collapse;
-        margin-top: 20px;
-      }
-
-      #attendanceTable th,
-      #attendanceTable td {
-        width: 500px;
-        padding: 10px;
-        text-align: center;
-      }
-
-      #attendanceTable thead {
-        background-color: #f2f2f2;
-      }
-
-      #attendanceTable tbody tr:nth-child(even) {
-        background-color: #f9f9f9;
-      }
-
-      #attendanceTable tbody tr:hover {
-        background-color: #d4eaff;
-      }
-
-      #attendanceTable th,
-      #attendanceTable td {
-        border: 1px solid #ddd;
-      }
-      .low-attd {
-        color: red;
-      }
-      #student_22Q91A6671,
-      #student_22Q91A6692,
-      #student_22Q91A6693,
-      #student_22Q91A66A5 {
-        opacity: 0.2;
-        color: black;
-      }
-    </style>
+    </script>
   </head>
+
   <body>
-    <h1>Attendance Table OCT 2023 JAN 2024</h1>
-    <a href="./public/index.html">CLick here</a>
+    <h1>Attendance</h1>
+
+    <div id="button-container">
+      <a id="btn-CSM-A" href="?section=CSM-A">CSM-A</a>
+      <a id="btn-CSM-B" href="?section=CSM-B">CSM-B</a>
+      <a id="btn-CSM-C" href="?section=CSM-C">CSM-C</a>
+  </div>
+
+
+    <button id="select">Select All</button>
+    <button id="unselect">Remove All</button>
+    <div id="attendance-table">
+      <div class="table-heading">
+        <h3>Attendance</h3>
+        <h3>Roll No.</h3>
+        <h3>Name</h3>
+      </div>
+      <div class="table-data">
+        <!-- <div class="22Q91A6691 student A">
+          <p class="att"></p>
+          <p>22Q91A6691</p>
+          <p>Harsh RB</p>
+        </div>
+        <div class="22Q91A66B5 student A">
+          <p class="att"></p>
+          <p>22Q91A66B5</p>
+          <p>PJ</p>
+        </div> -->
+      </div>
+    </div>
+    <button id="copy-button">Copy Roll Numbers</button>
   </body>
 </html>
