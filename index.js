@@ -67,27 +67,7 @@ $(document).ready(function () {
     $(".student").addClass("A");
     $(".A .att").html(svg_uncheck);
   });
-  $("#copy-button").click(function () {
-    var selectedRollNumbers = [];
-    $(".P").each(function () {
-      var classtest = $(this).attr("class").split(" ")[0].slice(-2);
-      if ($(this).attr("class").split(" ")[0].substring(0, 2) == 23) {
-        classtest = 'LE-'+classtest;
-      }
-      selectedRollNumbers.push(classtest);
-    });
-    console.log(selectedRollNumbers);
-    var unselectedRollNumbers = [];
-    $(".A").each(function () {
-      var classtest = $(this).attr("class").split(" ")[0].slice(-2);
-      if ($(this).attr("class").split(" ")[0].substring(0, 2) == 23) {
-        classtest = 'LE-'+classtest;
-      }
-      unselectedRollNumbers.push(classtest);
-    });
-    console.log(unselectedRollNumbers);
-
-    var date = new Date();
+  var date = new Date();
     function getDaySuffix(day) {
       if (day > 3 && day < 21) return "th";
       switch (day % 10) {
@@ -119,6 +99,31 @@ $(document).ready(function () {
         hours > 12 || (hours === 12 && minutes >= 40) ? "Morning" : "Afternoon";
       return { formattedDate, formattedTime, morningOrAfternoon };
     }
+    function getAttendese() {
+      var selectedRollNumbers = [];
+    $(".P").each(function () {
+      var classtest = $(this).attr("class").split(" ")[0].slice(-2);
+      if ($(this).attr("class").split(" ")[0].substring(0, 2) == 23) {
+        classtest = 'LE-'+classtest;
+      }
+      selectedRollNumbers.push(classtest);
+    });
+    console.log(selectedRollNumbers);
+    var unselectedRollNumbers = [];
+    $(".A").each(function () {
+      var classtest = $(this).attr("class").split(" ")[0].slice(-2);
+      if ($(this).attr("class").split(" ")[0].substring(0, 2) == 23) {
+        classtest = 'LE-'+classtest;
+      }
+      unselectedRollNumbers.push(classtest);
+    });
+    console.log(unselectedRollNumbers);
+    return {selectedRollNumbers, unselectedRollNumbers}
+    }
+  $("#copy-button").click(function () {
+    
+    var { selectedRollNumbers, unselectedRollNumbers } = getAttendese();
+    
     var { formattedDate, formattedTime, morningOrAfternoon } = formatDate(date);
     navigator.clipboard
       .writeText(
@@ -137,4 +142,23 @@ $(document).ready(function () {
         console.error("Failed to copy: ", err);
       });
   });
+  $("#share-button").on("click", function() {
+    shareAttendance("attendance");
+  });
+  function shareAttendance() {
+    var { selectedRollNumbers, unselectedRollNumbers } = getAttendese();
+    
+    var { formattedDate, formattedTime, morningOrAfternoon } = formatDate(date);
+    // Constructing the WhatsApp share URL
+    let whatsappURL = "https://wa.me/?text=" + encodeURIComponent(`${
+          getQueryParams().section
+        } Attendance ${formattedDate} \n${morningOrAfternoon} ${formattedTime} \nPresent ${
+          selectedRollNumbers.length
+        }: \n${selectedRollNumbers.join(", ")}.\n\nAbsent ${
+          unselectedRollNumbers.length
+        }:\n${unselectedRollNumbers.join(", ")}.`);
+  
+    // Opening WhatsApp in a new tab/window
+    window.open(whatsappURL, "_blank");
+  }
 });
