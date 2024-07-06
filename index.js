@@ -41,7 +41,7 @@ $(document).ready(function () {
                     setTimeout(function() {
                       $(".table-data").append($studentElement);
                       $studentElement.slideDown();
-                  }, index * 100);
+                  }, index * 1000);
       });
     });
     $("#button-container").hide();
@@ -50,6 +50,7 @@ $(document).ready(function () {
     $("#unselect").hide();
     $("#attendance-table").hide();
     $("#copy-button").hide();
+    $("#share-button").hide();
   }
   $(".table-data").on("click", ".student", function (event) {
     $(event.currentTarget).toggleClass("A P");
@@ -143,7 +144,7 @@ $(document).ready(function () {
       });
   });
   $("#share-button").on("click", function() {
-    shareAttendance("attendance");
+    shareAttendance();
   });
   function shareAttendance() {
     var { selectedRollNumbers, unselectedRollNumbers } = getAttendese();
