@@ -7,8 +7,9 @@ $(document).ready(function () {
   }
   // $("#display-div").hide();
   // Retrieve and display cookie data when the page loads
-  var cookieData = getCookie("attendanceData").replace(/\n/g, '<br>');
+  var cookieData = getCookie("attendanceData");
   if (cookieData) {
+    cookieData = cookieData.replace(/\n/g, '<br>');
     $("#display-div").html(cookieData);
   }
 
