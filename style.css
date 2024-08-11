@@ -6,6 +6,9 @@ body{
 h3, p{
     margin: 0;
 }
+#button-container{
+    margin: 20px 0;
+}
 button, #button-container > a {
     padding: 10px 20px;
     margin: 10px;
@@ -62,6 +65,45 @@ button:hover {
 .att{
 padding: 0 20px;
 }
+#share-button{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+svg{
+    width: 30px;
+    height: 30px;
+}
+
+footer {
+    background-color: #f8f9fa;
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #eaeaea;
+}
+
+.footer-text {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+}
+
+.social-links {
+    margin: 10px 0;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: #007bff;
+    margin: 0 10px;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.social-links a:hover {
+    color: #0056b3; /* Darker shade on hover */
+    transform: scale(1.1); /* Slightly enlarge the link */
+}
+
 @media (max-width: 768px) {
     #attendance-table {
         width: 96%;

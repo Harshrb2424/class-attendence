@@ -1,4 +1,29 @@
 $(document).ready(function () {
+
+  function getCookie(name) {
+    let value = `; ${document.cookie}`;
+    let parts = value.split(`; ${name}=`);
+    if (parts.length === 2) return decodeURIComponent(parts.pop().split(';').shift());
+  }
+  // $("#display-div").hide();
+  // Retrieve and display cookie data when the page loads
+  var cookieData = getCookie("attendanceData").replace(/\n/g, '<br>');
+  if (cookieData) {
+    $("#display-div").html(cookieData);
+  }
+
+  $("#toggle-button").click(function() {
+    var $displayDiv = $("#display-div");
+    
+    if ($displayDiv.is(":visible")) {
+        // If the div is visible, fade it out
+        $displayDiv.slideUp();
+    } else {
+        // If the div is hidden, fade it in
+        $displayDiv.slideDown();
+    }
+});
+
   function getQueryParams() {
     var params = {};
     window.location.search
@@ -27,6 +52,7 @@ $(document).ready(function () {
   }
   var queryParams = getQueryParams();
   if (queryParams.section) {
+    $("#display-div").hide();
     $.getJSON(queryParams.section + ".json", function (data) {
       data.forEach(function (student, index) {
         var studentDiv = `
@@ -41,7 +67,7 @@ $(document).ready(function () {
                     setTimeout(function() {
                       $(".table-data").append($studentElement);
                       $studentElement.slideDown();
-                  }, index * 1000);
+                  }, index * 20);
       });
     });
     $("#button-container").hide();
@@ -126,16 +152,34 @@ $(document).ready(function () {
     var { selectedRollNumbers, unselectedRollNumbers } = getAttendese();
     
     var { formattedDate, formattedTime, morningOrAfternoon } = formatDate(date);
-    navigator.clipboard
-      .writeText(
-        `${
-          getQueryParams().section
+    var textToCopy = `${
+          getQueryParams().section.replace(/-/g, ' ')
         } Attendance ${formattedDate} \n${morningOrAfternoon} ${formattedTime} \nPresent ${
           selectedRollNumbers.length
         }: \n${selectedRollNumbers.join(", ")}.\n\nAbsent ${
           unselectedRollNumbers.length
-        }:\n${unselectedRollNumbers.join(", ")}.`
-      )
+        }:\n${unselectedRollNumbers.join(", ")}.`;
+
+        // Function to get the value of a specific cookie by name
+    function getCookie(name) {
+      let value = `; ${document.cookie}`;
+      let parts = value.split(`; ${name}=`);
+      if (parts.length === 2) return decodeURIComponent(parts.pop().split(';').shift());
+    }
+    
+    // Retrieve existing cookie data
+    var existingData = getCookie("attendanceData");
+    
+    // Update the cookie with new data appended
+    var updatedData = existingData ? existingData + "\n\n" + textToCopy : textToCopy;
+    document.cookie = "attendanceData=" + encodeURIComponent(updatedData) + "; path=/";
+    
+    // Display updated cookie data
+    $("#display-div").text(updatedData);
+    
+    // Copy text to clipboard
+    navigator.clipboard
+      .writeText(textToCopy)
       .then(function () {
         alert("Copied roll numbers to clipboard!");
       })
@@ -152,7 +196,7 @@ $(document).ready(function () {
     var { formattedDate, formattedTime, morningOrAfternoon } = formatDate(date);
     // Constructing the WhatsApp share URL
     let whatsappURL = "https://wa.me/?text=" + encodeURIComponent(`${
-          getQueryParams().section
+          getQueryParams().section.replace(/-/g, ' ')
         } Attendance ${formattedDate} \n${morningOrAfternoon} ${formattedTime} \nPresent ${
           selectedRollNumbers.length
         }: \n${selectedRollNumbers.join(", ")}.\n\nAbsent ${
@@ -163,3 +207,4 @@ $(document).ready(function () {
     window.open(whatsappURL, "_blank");
   }
 });
+
