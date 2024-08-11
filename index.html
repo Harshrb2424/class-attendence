@@ -2,63 +2,59 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Attendance Table</title>
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    <script src="index.js"></script>
-    <style>
-      body {
-        font-family: "Arial", sans-serif;
-        margin: 20px;
-      }
-
-      h1 {
-        text-align: center;
-      }
-
-      #attendanceTable {
-        width: 5000px;
-        border-collapse: collapse;
-        margin-top: 20px;
-      }
-
-      #attendanceTable th,
-      #attendanceTable td {
-        width: 500px;
-        padding: 10px;
-        text-align: center;
-      }
-
-      #attendanceTable thead {
-        background-color: #f2f2f2;
-      }
-
-      #attendanceTable tbody tr:nth-child(even) {
-        background-color: #f9f9f9;
-      }
-
-      #attendanceTable tbody tr:hover {
-        background-color: #d4eaff;
-      }
-
-      #attendanceTable th,
-      #attendanceTable td {
-        border: 1px solid #ddd;
-      }
-      .low-attd {
-        color: red;
-      }
-      #student_22Q91A6671,
-      #student_22Q91A6692,
-      #student_22Q91A6693,
-      #student_22Q91A66A5 {
-        opacity: 0.2;
-        color: black;
-      }
-    </style>
+    <title>Class Attendance</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="logo.svg" type="image/x-icon">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="module" src="index.js"></script>
   </head>
   <body>
-    <h1>Attendance Table OCT 2023 JAN 2024</h1>
-    <a href="./public/index.html">CLick here</a>
+    <h1>Attendance</h1>
+    <div id="button-container">
+      <a id="btn-III-CSM-A" href="?section=III-CSM-A">III-CSM-A</a>
+      <a id="btn-III-CSM-B" href="?section=III-CSM-B">III-CSM-B</a>
+      <a id="btn-III-CSM-C" href="?section=III-CSM-C">III-CSM-C</a>
+  </div>
+    <button id="select">Select All</button>
+    <button id="unselect">Remove All</button>
+    <div id="attendance-table">
+      <div class="table-heading">
+        <h3>Attendance</h3>
+        <h3>Roll No.</h3>
+        <h3>Name</h3>
+      </div>
+      <div class="table-data">
+        <!-- <div class="22Q91A6691 student A">
+          <p class="att"></p>
+          <p>22Q91A6691</p>
+          <p>Harsh RB</p>
+        </div>
+        <div class="22Q91A66B5 student A">
+          <p class="att"></p>
+          <p>22Q91A66B5</p>
+          <p>PJ</p>
+        </div> -->
+      </div>
+    </div>
+    <button id="copy-button">Copy Attendance</button>
+    <button id="share-button"><p  class="svg-whatsapp-light"></p>Share On Whatsapp</button>
+    <button id="toggle-button">History</button>
+    <div id="display-div"></div> 
+
+    <footer>
+      <p class="footer-text">
+          Harsh RB
+        </p>
+        <a href="https://github.com/Harshrb2424/class-attendence" target="_blank">View the Repository</a>
+      <p class="social-links">
+          <a href="https://github.com/Harshrb2424" target="_blank">GitHub</a> |
+          <a href="https://www.behance.net/harshrb" target="_blank">Behance</a> |
+          <a href="https://www.linkedin.com/in/harsh-r-bagtharia-37aa741a0/" target="_blank">LinkedIn</a>
+      </p>
+  </footer>
+  
+    <script src="https://harshrb2424.github.io/svg-logos/svg.js"></script>
   </body>
 </html>
