@@ -176,7 +176,7 @@ $(document).ready(function () {
     document.cookie = "attendanceData=" + encodeURIComponent(updatedData) + "; path=/";
     
     // Display updated cookie data
-    $("#display-div").text(updatedData);
+    $("#display-div").html(updatedData.replace(/\n/g, '<br>'));
     
     // Copy text to clipboard
     navigator.clipboard
@@ -196,14 +196,34 @@ $(document).ready(function () {
     
     var { formattedDate, formattedTime, morningOrAfternoon } = formatDate(date);
     // Constructing the WhatsApp share URL
-    let whatsappURL = "https://wa.me/?text=" + encodeURIComponent(`${
+    
+  
+        var textToCopy = `${
           getQueryParams().section.replace(/-/g, ' ')
         } Attendance ${formattedDate} \n${morningOrAfternoon} ${formattedTime} \nPresent ${
           selectedRollNumbers.length
         }: \n${selectedRollNumbers.join(", ")}.\n\nAbsent ${
           unselectedRollNumbers.length
-        }:\n${unselectedRollNumbers.join(", ")}.`);
-  
+        }:\n${unselectedRollNumbers.join(", ")}.`;
+        
+        let whatsappURL = "https://wa.me/?text=" + encodeURIComponent(textToCopy);
+        // Function to get the value of a specific cookie by name
+    function getCookie(name) {
+      let value = `; ${document.cookie}`;
+      let parts = value.split(`; ${name}=`);
+      if (parts.length === 2) return decodeURIComponent(parts.pop().split(';').shift());
+    }
+    
+    // Retrieve existing cookie data
+    var existingData = getCookie("attendanceData");
+    
+    // Update the cookie with new data appended
+    var updatedData = existingData ? existingData + "\n\n" + textToCopy : textToCopy;
+    document.cookie = "attendanceData=" + encodeURIComponent(updatedData) + "; path=/";
+    
+    // Display updated cookie data
+    $("#display-div").html(updatedData.replace(/\n/g, '<br>'));
+    
     // Opening WhatsApp in a new tab/window
     window.open(whatsappURL, "_blank");
   }
