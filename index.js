@@ -155,7 +155,7 @@ $(document).ready(function () {
     var { formattedDate, formattedTime, morningOrAfternoon } = formatDate(date);
     var textToCopy = `${
           getQueryParams().section.replace(/-/g, ' ')
-        } Attendance ${formattedDate} \n${morningOrAfternoon} ${formattedTime} \nPresent ${
+        } Attendance ${formattedDate} \n${formattedTime} \nPresent ${
           selectedRollNumbers.length
         }: \n${selectedRollNumbers.join(", ")}.\n\nAbsent ${
           unselectedRollNumbers.length
