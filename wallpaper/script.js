@@ -86,7 +86,7 @@ function initializeSchedule(jsonData) {
         document.getElementById("subject-code").textContent = "";
         document.getElementById("faculty").textContent = "";
         document.getElementById("timing").textContent = "";
-        document.getElementById("active-unit").textContent = ``;
+        document.getElementById("active-unit").textContent = `III CSM B`;
 
         renderTopics(document.getElementById("topics-container"), [[""]]);
       }

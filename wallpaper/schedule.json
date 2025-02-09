@@ -164,11 +164,11 @@
       },
       {
         "subject": "Sports",
-        "timing": "14:20-15:10",
+        "timing": "15:10-16:00",
         "code": "SPORTS",
         "faculty": "",
-        "units": [[]],
-        "topics": [
+        "units": [["III CSM B"]],
+        "topics": [[]
         ]
       }
     ],
@@ -340,8 +340,8 @@
         "timing": "15:10-16:00",
         "code": "LIB",
         "faculty": "",
-        "units": [[]],
-        "topics": [
+        "units": [["III CSM B"]],
+        "topics": [[]
         ]
       }
     ],
@@ -979,8 +979,8 @@
         "timing": "15:10-16:00",
         "code": "COUNC",
         "faculty": "Mrs. K Sunanda Reddy",
-        "units": [[]],
-        "topics": [
+        "units": [["III CSM B"]],
+        "topics": [[]
         ]
       }
     ]
