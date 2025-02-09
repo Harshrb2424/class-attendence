@@ -1,0 +1,992 @@
+{
+  "schedule": {
+    "Sunday": [
+      {
+        "subject": "Software Testing Methodologies",
+        "timing": "09:30-10:30",
+        "code": "STM",
+        "faculty": "Mrs. Anju Gopi",
+        "units": ["Unit 1", "Unit 2", "Unit 3", "Unit 4", "Unit 5"],
+        "topics": [
+          [
+            "Introduction: Purpose of testing, Dichotomies, model for testing, consequences of bugs, taxonomy of bugs",
+            "Flow graphs and Path testing: Basics concepts of path testing, predicates, path predicates and achievable paths, path sensitizing, path instrumentation, application of path testing"
+          ],
+          [
+            "Transaction Flow Testing: transaction flows, transaction flow testing techniques",
+            "Data Flow testing: Basics of data flow testing, strategies in data flow testing, application of data flow testing",
+            "Domain Testing: domains and paths, Nice & ugly domains, domain testing, domains and interfaces testing, domain and interface testing, domains and testability"
+          ],
+          [
+            "Paths, Path products and Regular expressions: path products & path expression, reduction procedure, applications, regular expressions & flow anomaly detection",
+            "Logic Based Testing: overview, decision tables, path expressions, kv charts, specifications"
+          ],
+          [
+            "State, State Graphs and Transition testing: state graphs, good & bad state graphs, state testing, Testability tips"
+          ],
+          [
+            "Graph Matrices and Application: Motivational overview, matrix of graph, relations, power of a matrix, node reduction algorithm, building tools",
+            "(Student should be given an exposure to a tool like Jmeter/selenium/soapUI/Catalon)"
+          ]
+        ]
+      },
+      {
+        "subject": "Digital Electronics for Engineering",
+        "timing": "10:30-11:30",
+        "code": "DEE",
+        "faculty": "Dr. K Vamshi",
+        "units": [
+          "UNIT - I: Number Systems & Boolean Algebra",
+          "UNIT - II: Minimization of Boolean Functions & Combinational Circuits",
+          "UNIT - III: Sequential Circuits Fundamentals",
+          "UNIT - IV: Realization of Logic Gates & Logic Families",
+          "UNIT - V: Integrated Circuits & Op-Amp"
+        ],
+        "topics": [
+          [
+            "Number Systems: Number systems, Complements of Numbers, Codes- Weighted and Non-weighted codes and its Properties.",
+            "Boolean Algebra: Basic Theorems and Properties, Switching Functions- Canonical and Standard Form, Algebraic Simplification, Digital Logic Gates, EX-OR gates, Universal Gates, Multilevel NAND/NOR realizations."
+          ],
+          [
+            "Minimization of Boolean functions: Karnaugh Map Method - Up to four Variables, Don’t Care Map Entries, Tabular Method.",
+            "Combinational Logic Circuits: Adders, Subtractors, Comparators, Multiplexers, Demultiplexers, Encoders, Decoders and Code converters, Hazards and Hazard Free Relations."
+          ],
+          [
+            "Sequential Circuits Fundamentals: Basic Architectural Distinctions between Combinational and Sequential circuits, SR Latch, Flip Flops: SR, JK, JK Master Slave, D and T Type Flip Flops, Excitation Table of all Flip Flops, Fundamentals of shift registers, ripple and decade counters."
+          ],
+          [
+            "Realization of Logic Gates Using Diodes & Transistors: AND, OR and NOT Gates using Diodes and Transistors.",
+            "DCTL, RTL, DTL, TTL, CML and CMOS Logic Families and its Comparison, standard TTL NAND Gate Analysis & characteristics, TTL open collector O/Ps, Tristate TTL, MOS & CMOS open drain and tristate outputs, CMOS transmission gate."
+          ],
+          [
+            "Integrated Circuits: Classification, chip size and circuit complexity, basic information of Op-amp, ideal and practical Op-amp, internal circuits, Op-amp characteristics, DC and AC Characteristics, 741 opamp and its features, modes of operation-inverting, non-inverting, differential."
+          ]
+        ]
+      },
+      {
+        "subject": "Knowledge Representation and Reasoning",
+        "timing": "11:40-12:40",
+        "code": "KRR",
+        "faculty": "Mrs. G Sirisha",
+        "units": [
+          "UNIT - I: The Key Concepts & Logic",
+          "UNIT - II: Ontology",
+          "UNIT - III: Knowledge Representations",
+          "UNIT - IV: Processes & Contexts",
+          "UNIT - V: Knowledge Soup & Knowledge Acquisition"
+        ],
+        "topics": [
+          [
+            "The Key Concepts: Knowledge, Representation, Reasoning, Why knowledge representation and reasoning, Role of logic.",
+            "Logic: Historical background, Representing knowledge in logic, Varieties of logic, Name, Type, Measures, Unity Amidst diversity."
+          ],
+          [
+            "Ontology: Ontological categories, Philosophical background, Top-level categories, Describing physical entities, Defining abstractions, Sets, Collections, Types and Categories, Space and Time."
+          ],
+          [
+            "Knowledge Representations: Knowledge Engineering, Representing structure in frames, Rules and data, Object-oriented systems, Natural language Semantics, Levels of representation."
+          ],
+          [
+            "Processes: Times, Events and Situations, Classification of processes, Procedures, Processes and Histories, Concurrent processes, Computation, Constraint satisfaction.",
+            "Change Contexts: Syntax of contexts, Semantics of contexts, First-order reasoning in contexts, Modal reasoning in contexts, Encapsulating objects in contexts."
+          ],
+          [
+            "Knowledge Soup: Vagueness, Uncertainty, Randomness and Ignorance, Limitations of logic, Fuzzy logic, Nonmonotonic Logic, Theories, Models and the world, Semiotics.",
+            "Knowledge Acquisition and Sharing: Sharing Ontologies, Conceptual schema, Accommodating multiple paradigms, Relating different knowledge representations, Language patterns, Tools for knowledge acquisition."
+          ]
+        ]
+      },
+      {
+        "subject": "Natural Language Processing",
+        "timing": "13:30-14:20",
+        "code": "NLP",
+        "faculty": "Mr. M Saktivel",
+        "units": [
+          "UNIT - I: Finding the Structure of Words & Documents",
+          "UNIT - II: Syntax I - Parsing Natural Language",
+          "UNIT - III: Syntax II & Semantic Parsing I",
+          "UNIT - IV: Semantic Parsing II",
+          "UNIT - V: Language Modeling"
+        ],
+        "topics": [
+          [
+            "Finding the Structure of Words: Words and Their Components, Issues and Challenges, Morphological Models.",
+            "Finding the Structure of Documents: Introduction, Methods, Complexity of the Approaches, Performances of the Approaches, Features."
+          ],
+          [
+            "Syntax I: Parsing Natural Language, Treebanks: A Data-Driven Approach to Syntax, Representation of Syntactic Structure, Parsing Algorithms."
+          ],
+          [
+            "Syntax II: Models for Ambiguity Resolution in Parsing, Multilingual Issues.",
+            "Semantic Parsing I: Introduction, Semantic Interpretation, System Paradigms, Word Sense."
+          ],
+          [
+            "Semantic Parsing II: Predicate-Argument Structure, Meaning Representation Systems."
+          ],
+          [
+            "Language Modeling: Introduction, N-Gram Models, Language Model Evaluation, Bayesian Parameter Estimation, Language Model Adaptation, Language Models - Class Based, Variable Length, Bayesian Topic Based, Multilingual and Cross-Lingual Language Modeling."
+          ]
+        ]
+      },
+      {
+        "subject": "Data Analyticsta Analytics",
+        "timing": "14:20-15:10",
+        "code": "DA",
+        "faculty": "Mr. S Srikanth",
+        "units": [
+          "UNIT - I: Data Management",
+          "UNIT - II: Data Analytics & Business Modeling",
+          "UNIT - III: Regression & Logistic Regression",
+          "UNIT - IV: Object Segmentation & Time Series Methods",
+          "UNIT - V: Data Visualization"
+        ],
+        "topics": [
+          [
+            "Data Management: Design Data Architecture and manage the data for analysis, understand various sources of Data like Sensors/Signals/GPS etc.",
+            "Data Quality (noise, outliers, missing values, duplicate data) and Data Processing."
+          ],
+          [
+            "Data Analytics: Introduction to Analytics, Introduction to Tools and Environment, Application of Modeling in Business, Databases & Types of Data and Variables.",
+            "Data Modeling Techniques, Missing Imputations, Need for Business Modeling."
+          ],
+          [
+            "Regression – Concepts, Blue property assumptions, Least Square Estimation, Variable Rationalization, and Model Building.",
+            "Logistic Regression: Model Theory, Model fit Statistics, Model Construction, Analytics applications to various Business Domains."
+          ],
+          [
+            "Object Segmentation: Regression Vs Segmentation – Supervised and Unsupervised Learning, Tree Building – Regression, Classification, Overfitting, Pruning and Complexity, Multiple Decision Trees.",
+            "Time Series Methods: Arima, Measures of Forecast Accuracy, STL approach, Extract features from generated model as Height, Average Energy etc and Analyze for prediction."
+          ],
+          [
+            "Data Visualization: Pixel-Oriented Visualization Techniques, Geometric Projection Visualization Techniques, Icon-Based Visualization Techniques, Hierarchical Visualization Techniques, Visualizing Complex Data and Relations."
+          ]
+        ]
+      },
+      {
+        "subject": "Sports",
+        "timing": "14:20-15:10",
+        "code": "SPORTS",
+        "faculty": "",
+        "units": [[]],
+        "topics": [
+        ]
+      }
+    ],
+    "Tuesday": [
+      {
+        "subject": "Data Analytics",
+        "timing": "09:30-10:20",
+        "code": "DA",
+        "faculty": "Mr. S Srikanth",
+        "units": [
+          "UNIT - I: Data Management",
+          "UNIT - II: Data Analytics & Business Modeling",
+          "UNIT - III: Regression & Logistic Regression",
+          "UNIT - IV: Object Segmentation & Time Series Methods",
+          "UNIT - V: Data Visualization"
+        ],
+        "topics": [
+          [
+            "Data Management: Design Data Architecture and manage the data for analysis, understand various sources of Data like Sensors/Signals/GPS etc.",
+            "Data Quality (noise, outliers, missing values, duplicate data) and Data Processing."
+          ],
+          [
+            "Data Analytics: Introduction to Analytics, Introduction to Tools and Environment, Application of Modeling in Business, Databases & Types of Data and Variables.",
+            "Data Modeling Techniques, Missing Imputations, Need for Business Modeling."
+          ],
+          [
+            "Regression – Concepts, Blue property assumptions, Least Square Estimation, Variable Rationalization, and Model Building.",
+            "Logistic Regression: Model Theory, Model fit Statistics, Model Construction, Analytics applications to various Business Domains."
+          ],
+          [
+            "Object Segmentation: Regression Vs Segmentation – Supervised and Unsupervised Learning, Tree Building – Regression, Classification, Overfitting, Pruning and Complexity, Multiple Decision Trees.",
+            "Time Series Methods: Arima, Measures of Forecast Accuracy, STL approach, Extract features from generated model as Height, Average Energy etc and Analyze for prediction."
+          ],
+          [
+            "Data Visualization: Pixel-Oriented Visualization Techniques, Geometric Projection Visualization Techniques, Icon-Based Visualization Techniques, Hierarchical Visualization Techniques, Visualizing Complex Data and Relations."
+          ]
+        ]
+      },
+      {
+        "subject": "Software Testing Methodologies",
+        "timing": "10:20-11:10",
+        "code": "STM",
+        "faculty": "Mrs. Anju Gopi",
+        "units": ["Unit 1", "Unit 2", "Unit 3", "Unit 4", "Unit 5"],
+        "topics": [
+          [
+            "Introduction: Purpose of testing, Dichotomies, model for testing, consequences of bugs, taxonomy of bugs",
+            "Flow graphs and Path testing: Basics concepts of path testing, predicates, path predicates and achievable paths, path sensitizing, path instrumentation, application of path testing"
+          ],
+          [
+            "Transaction Flow Testing: transaction flows, transaction flow testing techniques",
+            "Data Flow testing: Basics of data flow testing, strategies in data flow testing, application of data flow testing",
+            "Domain Testing: domains and paths, Nice & ugly domains, domain testing, domains and interfaces testing, domain and interface testing, domains and testability"
+          ],
+          [
+            "Paths, Path products and Regular expressions: path products & path expression, reduction procedure, applications, regular expressions & flow anomaly detection",
+            "Logic Based Testing: overview, decision tables, path expressions, kv charts, specifications"
+          ],
+          [
+            "State, State Graphs and Transition testing: state graphs, good & bad state graphs, state testing, Testability tips"
+          ],
+          [
+            "Graph Matrices and Application: Motivational overview, matrix of graph, relations, power of a matrix, node reduction algorithm, building tools",
+            "(Student should be given an exposure to a tool like Jmeter/selenium/soapUI/Catalon)"
+          ]
+        ]
+      },
+      {
+        "subject": "Data Analytics",
+        "timing": "11:10-12:00",
+        "code": "DA",
+        "faculty": "Mr. S Srikanth",
+        "units": [
+          "UNIT - I: Data Management",
+          "UNIT - II: Data Analytics & Business Modeling",
+          "UNIT - III: Regression & Logistic Regression",
+          "UNIT - IV: Object Segmentation & Time Series Methods",
+          "UNIT - V: Data Visualization"
+        ],
+        "topics": [
+          [
+            "Data Management: Design Data Architecture and manage the data for analysis, understand various sources of Data like Sensors/Signals/GPS etc.",
+            "Data Quality (noise, outliers, missing values, duplicate data) and Data Processing."
+          ],
+          [
+            "Data Analytics: Introduction to Analytics, Introduction to Tools and Environment, Application of Modeling in Business, Databases & Types of Data and Variables.",
+            "Data Modeling Techniques, Missing Imputations, Need for Business Modeling."
+          ],
+          [
+            "Regression – Concepts, Blue property assumptions, Least Square Estimation, Variable Rationalization, and Model Building.",
+            "Logistic Regression: Model Theory, Model fit Statistics, Model Construction, Analytics applications to various Business Domains."
+          ],
+          [
+            "Object Segmentation: Regression Vs Segmentation – Supervised and Unsupervised Learning, Tree Building – Regression, Classification, Overfitting, Pruning and Complexity, Multiple Decision Trees.",
+            "Time Series Methods: Arima, Measures of Forecast Accuracy, STL approach, Extract features from generated model as Height, Average Energy etc and Analyze for prediction."
+          ],
+          [
+            "Data Visualization: Pixel-Oriented Visualization Techniques, Geometric Projection Visualization Techniques, Icon-Based Visualization Techniques, Hierarchical Visualization Techniques, Visualizing Complex Data and Relations."
+          ]
+        ]
+      },
+      {
+        "subject": "Natural Language Processing",
+        "timing": "13:30-14:20",
+        "code": "NLP",
+        "faculty": "Mr. M Saktivel",
+        "units": [
+          "UNIT - I: Finding the Structure of Words & Documents",
+          "UNIT - II: Syntax I - Parsing Natural Language",
+          "UNIT - III: Syntax II & Semantic Parsing I",
+          "UNIT - IV: Semantic Parsing II",
+          "UNIT - V: Language Modeling"
+        ],
+        "topics": [
+          [
+            "Finding the Structure of Words: Words and Their Components, Issues and Challenges, Morphological Models.",
+            "Finding the Structure of Documents: Introduction, Methods, Complexity of the Approaches, Performances of the Approaches, Features."
+          ],
+          [
+            "Syntax I: Parsing Natural Language, Treebanks: A Data-Driven Approach to Syntax, Representation of Syntactic Structure, Parsing Algorithms."
+          ],
+          [
+            "Syntax II: Models for Ambiguity Resolution in Parsing, Multilingual Issues.",
+            "Semantic Parsing I: Introduction, Semantic Interpretation, System Paradigms, Word Sense."
+          ],
+          [
+            "Semantic Parsing II: Predicate-Argument Structure, Meaning Representation Systems."
+          ],
+          [
+            "Language Modeling: Introduction, N-Gram Models, Language Model Evaluation, Bayesian Parameter Estimation, Language Model Adaptation, Language Models - Class Based, Variable Length, Bayesian Topic Based, Multilingual and Cross-Lingual Language Modeling."
+          ]
+        ]
+      },
+      {
+        "subject": "Digital Electronics for Engineering",
+        "timing": "14:20-15:10",
+        "code": "DEE",
+        "faculty": "Dr. K Vamshi",
+        "units": [
+          "UNIT - I: Number Systems & Boolean Algebra",
+          "UNIT - II: Minimization of Boolean Functions & Combinational Circuits",
+          "UNIT - III: Sequential Circuits Fundamentals",
+          "UNIT - IV: Realization of Logic Gates & Logic Families",
+          "UNIT - V: Integrated Circuits & Op-Amp"
+        ],
+        "topics": [
+          [
+            "Number Systems: Number systems, Complements of Numbers, Codes- Weighted and Non-weighted codes and its Properties.",
+            "Boolean Algebra: Basic Theorems and Properties, Switching Functions- Canonical and Standard Form, Algebraic Simplification, Digital Logic Gates, EX-OR gates, Universal Gates, Multilevel NAND/NOR realizations."
+          ],
+          [
+            "Minimization of Boolean functions: Karnaugh Map Method - Up to four Variables, Don’t Care Map Entries, Tabular Method.",
+            "Combinational Logic Circuits: Adders, Subtractors, Comparators, Multiplexers, Demultiplexers, Encoders, Decoders and Code converters, Hazards and Hazard Free Relations."
+          ],
+          [
+            "Sequential Circuits Fundamentals: Basic Architectural Distinctions between Combinational and Sequential circuits, SR Latch, Flip Flops: SR, JK, JK Master Slave, D and T Type Flip Flops, Excitation Table of all Flip Flops, Fundamentals of shift registers, ripple and decade counters."
+          ],
+          [
+            "Realization of Logic Gates Using Diodes & Transistors: AND, OR and NOT Gates using Diodes and Transistors.",
+            "DCTL, RTL, DTL, TTL, CML and CMOS Logic Families and its Comparison, standard TTL NAND Gate Analysis & characteristics, TTL open collector O/Ps, Tristate TTL, MOS & CMOS open drain and tristate outputs, CMOS transmission gate."
+          ],
+          [
+            "Integrated Circuits: Classification, chip size and circuit complexity, basic information of Op-amp, ideal and practical Op-amp, internal circuits, Op-amp characteristics, DC and AC Characteristics, 741 opamp and its features, modes of operation-inverting, non-inverting, differential."
+          ]
+        ]
+      },
+      {
+        "subject": "Library",
+        "timing": "15:10-16:00",
+        "code": "LIB",
+        "faculty": "",
+        "units": [[]],
+        "topics": [
+        ]
+      }
+    ],
+    "Wednesday": [
+      {
+        "subject": "Knowledge Representation and Reasoning",
+        "timing": "09:30-10:20",
+        "code": "KRR",
+        "faculty": "Mrs. G Sirisha",
+        "units": [
+          "UNIT - I: The Key Concepts & Logic",
+          "UNIT - II: Ontology",
+          "UNIT - III: Knowledge Representations",
+          "UNIT - IV: Processes & Contexts",
+          "UNIT - V: Knowledge Soup & Knowledge Acquisition"
+        ],
+        "topics": [
+          [
+            "The Key Concepts: Knowledge, Representation, Reasoning, Why knowledge representation and reasoning, Role of logic.",
+            "Logic: Historical background, Representing knowledge in logic, Varieties of logic, Name, Type, Measures, Unity Amidst diversity."
+          ],
+          [
+            "Ontology: Ontological categories, Philosophical background, Top-level categories, Describing physical entities, Defining abstractions, Sets, Collections, Types and Categories, Space and Time."
+          ],
+          [
+            "Knowledge Representations: Knowledge Engineering, Representing structure in frames, Rules and data, Object-oriented systems, Natural language Semantics, Levels of representation."
+          ],
+          [
+            "Processes: Times, Events and Situations, Classification of processes, Procedures, Processes and Histories, Concurrent processes, Computation, Constraint satisfaction.",
+            "Change Contexts: Syntax of contexts, Semantics of contexts, First-order reasoning in contexts, Modal reasoning in contexts, Encapsulating objects in contexts."
+          ],
+          [
+            "Knowledge Soup: Vagueness, Uncertainty, Randomness and Ignorance, Limitations of logic, Fuzzy logic, Nonmonotonic Logic, Theories, Models and the world, Semiotics.",
+            "Knowledge Acquisition and Sharing: Sharing Ontologies, Conceptual schema, Accommodating multiple paradigms, Relating different knowledge representations, Language patterns, Tools for knowledge acquisition."
+          ]
+        ]
+      },
+      {
+        "subject": "Data Analytics",
+        "timing": "10:20-11:10",
+        "code": "DA",
+        "faculty": "Mr. S Srikanth",
+        "units": [
+          "UNIT - I: Data Management",
+          "UNIT - II: Data Analytics & Business Modeling",
+          "UNIT - III: Regression & Logistic Regression",
+          "UNIT - IV: Object Segmentation & Time Series Methods",
+          "UNIT - V: Data Visualization"
+        ],
+        "topics": [
+          [
+            "Data Management: Design Data Architecture and manage the data for analysis, understand various sources of Data like Sensors/Signals/GPS etc.",
+            "Data Quality (noise, outliers, missing values, duplicate data) and Data Processing."
+          ],
+          [
+            "Data Analytics: Introduction to Analytics, Introduction to Tools and Environment, Application of Modeling in Business, Databases & Types of Data and Variables.",
+            "Data Modeling Techniques, Missing Imputations, Need for Business Modeling."
+          ],
+          [
+            "Regression – Concepts, Blue property assumptions, Least Square Estimation, Variable Rationalization, and Model Building.",
+            "Logistic Regression: Model Theory, Model fit Statistics, Model Construction, Analytics applications to various Business Domains."
+          ],
+          [
+            "Object Segmentation: Regression Vs Segmentation – Supervised and Unsupervised Learning, Tree Building – Regression, Classification, Overfitting, Pruning and Complexity, Multiple Decision Trees.",
+            "Time Series Methods: Arima, Measures of Forecast Accuracy, STL approach, Extract features from generated model as Height, Average Energy etc and Analyze for prediction."
+          ],
+          [
+            "Data Visualization: Pixel-Oriented Visualization Techniques, Geometric Projection Visualization Techniques, Icon-Based Visualization Techniques, Hierarchical Visualization Techniques, Visualizing Complex Data and Relations."
+          ]
+        ]
+      },
+      {
+        "subject": "Digital Electronics for Engineering",
+        "timing": "11:10-12:00",
+        "code": "DEE",
+        "faculty": "Dr. K Vamshi",
+        "units": [
+          "UNIT - I: Number Systems & Boolean Algebra",
+          "UNIT - II: Minimization of Boolean Functions & Combinational Circuits",
+          "UNIT - III: Sequential Circuits Fundamentals",
+          "UNIT - IV: Realization of Logic Gates & Logic Families",
+          "UNIT - V: Integrated Circuits & Op-Amp"
+        ],
+        "topics": [
+          [
+            "Number Systems: Number systems, Complements of Numbers, Codes- Weighted and Non-weighted codes and its Properties.",
+            "Boolean Algebra: Basic Theorems and Properties, Switching Functions- Canonical and Standard Form, Algebraic Simplification, Digital Logic Gates, EX-OR gates, Universal Gates, Multilevel NAND/NOR realizations."
+          ],
+          [
+            "Minimization of Boolean functions: Karnaugh Map Method - Up to four Variables, Don’t Care Map Entries, Tabular Method.",
+            "Combinational Logic Circuits: Adders, Subtractors, Comparators, Multiplexers, Demultiplexers, Encoders, Decoders and Code converters, Hazards and Hazard Free Relations."
+          ],
+          [
+            "Sequential Circuits Fundamentals: Basic Architectural Distinctions between Combinational and Sequential circuits, SR Latch, Flip Flops: SR, JK, JK Master Slave, D and T Type Flip Flops, Excitation Table of all Flip Flops, Fundamentals of shift registers, ripple and decade counters."
+          ],
+          [
+            "Realization of Logic Gates Using Diodes & Transistors: AND, OR and NOT Gates using Diodes and Transistors.",
+            "DCTL, RTL, DTL, TTL, CML and CMOS Logic Families and its Comparison, standard TTL NAND Gate Analysis & characteristics, TTL open collector O/Ps, Tristate TTL, MOS & CMOS open drain and tristate outputs, CMOS transmission gate."
+          ],
+          [
+            "Integrated Circuits: Classification, chip size and circuit complexity, basic information of Op-amp, ideal and practical Op-amp, internal circuits, Op-amp characteristics, DC and AC Characteristics, 741 opamp and its features, modes of operation-inverting, non-inverting, differential."
+          ]
+        ]
+      },
+      {
+        "subject": "Data Analytics",
+        "timing": "13:30-14:20",
+        "code": "DA",
+        "faculty": "Mr. S Srikanth",
+        "units": [
+          "UNIT - I: Data Management",
+          "UNIT - II: Data Analytics & Business Modeling",
+          "UNIT - III: Regression & Logistic Regression",
+          "UNIT - IV: Object Segmentation & Time Series Methods",
+          "UNIT - V: Data Visualization"
+        ],
+        "topics": [
+          [
+            "Data Management: Design Data Architecture and manage the data for analysis, understand various sources of Data like Sensors/Signals/GPS etc.",
+            "Data Quality (noise, outliers, missing values, duplicate data) and Data Processing."
+          ],
+          [
+            "Data Analytics: Introduction to Analytics, Introduction to Tools and Environment, Application of Modeling in Business, Databases & Types of Data and Variables.",
+            "Data Modeling Techniques, Missing Imputations, Need for Business Modeling."
+          ],
+          [
+            "Regression – Concepts, Blue property assumptions, Least Square Estimation, Variable Rationalization, and Model Building.",
+            "Logistic Regression: Model Theory, Model fit Statistics, Model Construction, Analytics applications to various Business Domains."
+          ],
+          [
+            "Object Segmentation: Regression Vs Segmentation – Supervised and Unsupervised Learning, Tree Building – Regression, Classification, Overfitting, Pruning and Complexity, Multiple Decision Trees.",
+            "Time Series Methods: Arima, Measures of Forecast Accuracy, STL approach, Extract features from generated model as Height, Average Energy etc and Analyze for prediction."
+          ],
+          [
+            "Data Visualization: Pixel-Oriented Visualization Techniques, Geometric Projection Visualization Techniques, Icon-Based Visualization Techniques, Hierarchical Visualization Techniques, Visualizing Complex Data and Relations."
+          ]
+        ]
+      },
+      {
+        "subject": "Software Testing Methodologies",
+        "timing": "14:20-15:10",
+        "code": "STM",
+        "faculty": "Mrs. Anju Gopi",
+        "units": ["Unit 1", "Unit 2", "Unit 3", "Unit 4", "Unit 5"],
+        "topics": [
+          [
+            "Introduction: Purpose of testing, Dichotomies, model for testing, consequences of bugs, taxonomy of bugs",
+            "Flow graphs and Path testing: Basics concepts of path testing, predicates, path predicates and achievable paths, path sensitizing, path instrumentation, application of path testing"
+          ],
+          [
+            "Transaction Flow Testing: transaction flows, transaction flow testing techniques",
+            "Data Flow testing: Basics of data flow testing, strategies in data flow testing, application of data flow testing",
+            "Domain Testing: domains and paths, Nice & ugly domains, domain testing, domains and interfaces testing, domain and interface testing, domains and testability"
+          ],
+          [
+            "Paths, Path products and Regular expressions: path products & path expression, reduction procedure, applications, regular expressions & flow anomaly detection",
+            "Logic Based Testing: overview, decision tables, path expressions, kv charts, specifications"
+          ],
+          [
+            "State, State Graphs and Transition testing: state graphs, good & bad state graphs, state testing, Testability tips"
+          ],
+          [
+            "Graph Matrices and Application: Motivational overview, matrix of graph, relations, power of a matrix, node reduction algorithm, building tools",
+            "(Student should be given an exposure to a tool like Jmeter/selenium/soapUI/Catalon)"
+          ]
+        ]
+      },
+      {
+        "subject": "Knowledge Representation and Reasoning",
+        "timing": "15:10-16:00",
+        "code": "KRR",
+        "faculty": "Mrs. G Sirisha",
+        "units": [
+          "UNIT - I: The Key Concepts & Logic",
+          "UNIT - II: Ontology",
+          "UNIT - III: Knowledge Representations",
+          "UNIT - IV: Processes & Contexts",
+          "UNIT - V: Knowledge Soup & Knowledge Acquisition"
+        ],
+        "topics": [
+          [
+            "The Key Concepts: Knowledge, Representation, Reasoning, Why knowledge representation and reasoning, Role of logic.",
+            "Logic: Historical background, Representing knowledge in logic, Varieties of logic, Name, Type, Measures, Unity Amidst diversity."
+          ],
+          [
+            "Ontology: Ontological categories, Philosophical background, Top-level categories, Describing physical entities, Defining abstractions, Sets, Collections, Types and Categories, Space and Time."
+          ],
+          [
+            "Knowledge Representations: Knowledge Engineering, Representing structure in frames, Rules and data, Object-oriented systems, Natural language Semantics, Levels of representation."
+          ],
+          [
+            "Processes: Times, Events and Situations, Classification of processes, Procedures, Processes and Histories, Concurrent processes, Computation, Constraint satisfaction.",
+            "Change Contexts: Syntax of contexts, Semantics of contexts, First-order reasoning in contexts, Modal reasoning in contexts, Encapsulating objects in contexts."
+          ],
+          [
+            "Knowledge Soup: Vagueness, Uncertainty, Randomness and Ignorance, Limitations of logic, Fuzzy logic, Nonmonotonic Logic, Theories, Models and the world, Semiotics.",
+            "Knowledge Acquisition and Sharing: Sharing Ontologies, Conceptual schema, Accommodating multiple paradigms, Relating different knowledge representations, Language patterns, Tools for knowledge acquisition."
+          ]
+        ]
+      }
+    ],
+    "Thursday": [
+      {
+        "subject": "Natural Language Processing",
+        "timing": "09:30-10:20",
+        "code": "NLP",
+        "faculty": "Mr. M Saktivel",
+        "units": [
+          "UNIT - I: Finding the Structure of Words & Documents",
+          "UNIT - II: Syntax I - Parsing Natural Language",
+          "UNIT - III: Syntax II & Semantic Parsing I",
+          "UNIT - IV: Semantic Parsing II",
+          "UNIT - V: Language Modeling"
+        ],
+        "topics": [
+          [
+            "Finding the Structure of Words: Words and Their Components, Issues and Challenges, Morphological Models.",
+            "Finding the Structure of Documents: Introduction, Methods, Complexity of the Approaches, Performances of the Approaches, Features."
+          ],
+          [
+            "Syntax I: Parsing Natural Language, Treebanks: A Data-Driven Approach to Syntax, Representation of Syntactic Structure, Parsing Algorithms."
+          ],
+          [
+            "Syntax II: Models for Ambiguity Resolution in Parsing, Multilingual Issues.",
+            "Semantic Parsing I: Introduction, Semantic Interpretation, System Paradigms, Word Sense."
+          ],
+          [
+            "Semantic Parsing II: Predicate-Argument Structure, Meaning Representation Systems."
+          ],
+          [
+            "Language Modeling: Introduction, N-Gram Models, Language Model Evaluation, Bayesian Parameter Estimation, Language Model Adaptation, Language Models - Class Based, Variable Length, Bayesian Topic Based, Multilingual and Cross-Lingual Language Modeling."
+          ]
+        ]
+      },
+      {
+        "subject": "Knowledge Representation and Reasoning",
+        "timing": "10:20-11:10",
+        "code": "KRR",
+        "faculty": "Mrs. G Sirisha",
+        "units": [
+          "UNIT - I: The Key Concepts & Logic",
+          "UNIT - II: Ontology",
+          "UNIT - III: Knowledge Representations",
+          "UNIT - IV: Processes & Contexts",
+          "UNIT - V: Knowledge Soup & Knowledge Acquisition"
+        ],
+        "topics": [
+          [
+            "The Key Concepts: Knowledge, Representation, Reasoning, Why knowledge representation and reasoning, Role of logic.",
+            "Logic: Historical background, Representing knowledge in logic, Varieties of logic, Name, Type, Measures, Unity Amidst diversity."
+          ],
+          [
+            "Ontology: Ontological categories, Philosophical background, Top-level categories, Describing physical entities, Defining abstractions, Sets, Collections, Types and Categories, Space and Time."
+          ],
+          [
+            "Knowledge Representations: Knowledge Engineering, Representing structure in frames, Rules and data, Object-oriented systems, Natural language Semantics, Levels of representation."
+          ],
+          [
+            "Processes: Times, Events and Situations, Classification of processes, Procedures, Processes and Histories, Concurrent processes, Computation, Constraint satisfaction.",
+            "Change Contexts: Syntax of contexts, Semantics of contexts, First-order reasoning in contexts, Modal reasoning in contexts, Encapsulating objects in contexts."
+          ],
+          [
+            "Knowledge Soup: Vagueness, Uncertainty, Randomness and Ignorance, Limitations of logic, Fuzzy logic, Nonmonotonic Logic, Theories, Models and the world, Semiotics.",
+            "Knowledge Acquisition and Sharing: Sharing Ontologies, Conceptual schema, Accommodating multiple paradigms, Relating different knowledge representations, Language patterns, Tools for knowledge acquisition."
+          ]
+        ]
+      },
+      {
+        "subject": "Software Testing Methodologies",
+        "timing": "11:10-12:00",
+        "code": "STM",
+        "faculty": "Mrs. Anju Gopi",
+        "units": ["Unit 1", "Unit 2", "Unit 3", "Unit 4", "Unit 5"],
+        "topics": [
+          [
+            "Introduction: Purpose of testing, Dichotomies, model for testing, consequences of bugs, taxonomy of bugs",
+            "Flow graphs and Path testing: Basics concepts of path testing, predicates, path predicates and achievable paths, path sensitizing, path instrumentation, application of path testing"
+          ],
+          [
+            "Transaction Flow Testing: transaction flows, transaction flow testing techniques",
+            "Data Flow testing: Basics of data flow testing, strategies in data flow testing, application of data flow testing",
+            "Domain Testing: domains and paths, Nice & ugly domains, domain testing, domains and interfaces testing, domain and interface testing, domains and testability"
+          ],
+          [
+            "Paths, Path products and Regular expressions: path products & path expression, reduction procedure, applications, regular expressions & flow anomaly detection",
+            "Logic Based Testing: overview, decision tables, path expressions, kv charts, specifications"
+          ],
+          [
+            "State, State Graphs and Transition testing: state graphs, good & bad state graphs, state testing, Testability tips"
+          ],
+          [
+            "Graph Matrices and Application: Motivational overview, matrix of graph, relations, power of a matrix, node reduction algorithm, building tools",
+            "(Student should be given an exposure to a tool like Jmeter/selenium/soapUI/Catalon)"
+          ]
+        ]
+      },
+      {
+        "subject": "Natural Language Processing/Data Analytics Lab",
+        "timing": "13:30-16:00",
+        "code": "NLP/DA Lab",
+        "faculty": "Mrs. Rajee Josan, Mrs. G Sirisha",
+        "units": [["NLP Exp 1 - 4"], ["NLP Exp 5 - 8"], ["DA Exp 1 - 6"], ["DA Exp 6 - 12"]],
+        "topics": [
+          [
+            "1. Write a Python program to perform the following tasks on text: a) Tokenization, b) Stop word removal",
+            "2. Write a Python program to implement the Porter Stemmer algorithm for stemming",
+            "3. Write a Python program for: a) Word Analysis, b) Word Generation",
+            "4. Create a sample list of at least 5 words with ambiguous sense and write a Python program to implement Word Sense Disambiguation (WSD)"
+          ],
+          [
+            "5. Install NLTK toolkit and perform stemming",
+            "6. Create a sample list of at least 10 words for POS tagging and find the POS for any given word",
+            "7. Write a Python program to: a) Perform Morphological Analysis using the NLTK library, b) Generate n-grams using the NLTK N-Grams library, c) Implement N-Grams Smoothing",
+            "8. Using the NLTK package, convert an audio file to text and a text file to an audio file"
+          ],
+          [
+            "1. Data Preprocessing: a. Handling missing values, b. Noise detection and removal, c. Identifying data redundancy and elimination.",
+            "2. Implement any one imputation model.",
+            "3. Implement Linear Regression.",
+            "4. Implement Logistic Regression.",
+            "5. Implement Decision Tree Induction for classification.",
+            "6. Implement Random Forest Classifier."
+          ],
+          [
+            "7. Implement ARIMA on Time Series data.",
+            "8. Object segmentation using hierarchical-based methods.",
+            "9. Perform Visualization techniques (types of maps - Bar, Column, Line, Scatter, 3D Cubes, etc.).",
+            "10. Perform Descriptive analytics on healthcare data.",
+            "11. Perform Predictive analytics on Product Sales data.",
+            "12. Apply Predictive analytics for Weather forecasting."
+          ]
+        ]
+      }
+    ],
+    "Friday": [
+      {
+        "subject": "Knowledge Representation and Reasoning",
+        "timing": "09:30-10:20",
+        "code": "KRR",
+        "faculty": "Mrs. G Sirisha",
+        "units": [
+          "UNIT - I: The Key Concepts & Logic",
+          "UNIT - II: Ontology",
+          "UNIT - III: Knowledge Representations",
+          "UNIT - IV: Processes & Contexts",
+          "UNIT - V: Knowledge Soup & Knowledge Acquisition"
+        ],
+        "topics": [
+          [
+            "The Key Concepts: Knowledge, Representation, Reasoning, Why knowledge representation and reasoning, Role of logic.",
+            "Logic: Historical background, Representing knowledge in logic, Varieties of logic, Name, Type, Measures, Unity Amidst diversity."
+          ],
+          [
+            "Ontology: Ontological categories, Philosophical background, Top-level categories, Describing physical entities, Defining abstractions, Sets, Collections, Types and Categories, Space and Time."
+          ],
+          [
+            "Knowledge Representations: Knowledge Engineering, Representing structure in frames, Rules and data, Object-oriented systems, Natural language Semantics, Levels of representation."
+          ],
+          [
+            "Processes: Times, Events and Situations, Classification of processes, Procedures, Processes and Histories, Concurrent processes, Computation, Constraint satisfaction.",
+            "Change Contexts: Syntax of contexts, Semantics of contexts, First-order reasoning in contexts, Modal reasoning in contexts, Encapsulating objects in contexts."
+          ],
+          [
+            "Knowledge Soup: Vagueness, Uncertainty, Randomness and Ignorance, Limitations of logic, Fuzzy logic, Nonmonotonic Logic, Theories, Models and the world, Semiotics.",
+            "Knowledge Acquisition and Sharing: Sharing Ontologies, Conceptual schema, Accommodating multiple paradigms, Relating different knowledge representations, Language patterns, Tools for knowledge acquisition."
+          ]
+        ]
+      },
+      {
+        "subject": "Natural Language Processing",
+        "timing": "10:20-11:10",
+        "code": "NLP",
+        "faculty": "Mr. M Saktivel",
+        "units": [
+          "UNIT - I: Finding the Structure of Words & Documents",
+          "UNIT - II: Syntax I - Parsing Natural Language",
+          "UNIT - III: Syntax II & Semantic Parsing I",
+          "UNIT - IV: Semantic Parsing II",
+          "UNIT - V: Language Modeling"
+        ],
+        "topics": [
+          [
+            "Finding the Structure of Words: Words and Their Components, Issues and Challenges, Morphological Models.",
+            "Finding the Structure of Documents: Introduction, Methods, Complexity of the Approaches, Performances of the Approaches, Features."
+          ],
+          [
+            "Syntax I: Parsing Natural Language, Treebanks: A Data-Driven Approach to Syntax, Representation of Syntactic Structure, Parsing Algorithms."
+          ],
+          [
+            "Syntax II: Models for Ambiguity Resolution in Parsing, Multilingual Issues.",
+            "Semantic Parsing I: Introduction, Semantic Interpretation, System Paradigms, Word Sense."
+          ],
+          [
+            "Semantic Parsing II: Predicate-Argument Structure, Meaning Representation Systems."
+          ],
+          [
+            "Language Modeling: Introduction, N-Gram Models, Language Model Evaluation, Bayesian Parameter Estimation, Language Model Adaptation, Language Models - Class Based, Variable Length, Bayesian Topic Based, Multilingual and Cross-Lingual Language Modeling."
+          ]
+        ]
+      },
+      {
+        "subject": "Digital Electronics for Engineering",
+        "timing": "11:10-12:00",
+        "code": "DEE",
+        "faculty": "Dr. K Vamshi",
+        "units": [
+          "UNIT - I: Number Systems & Boolean Algebra",
+          "UNIT - II: Minimization of Boolean Functions & Combinational Circuits",
+          "UNIT - III: Sequential Circuits Fundamentals",
+          "UNIT - IV: Realization of Logic Gates & Logic Families",
+          "UNIT - V: Integrated Circuits & Op-Amp"
+        ],
+        "topics": [
+          [
+            "Number Systems: Number systems, Complements of Numbers, Codes- Weighted and Non-weighted codes and its Properties.",
+            "Boolean Algebra: Basic Theorems and Properties, Switching Functions- Canonical and Standard Form, Algebraic Simplification, Digital Logic Gates, EX-OR gates, Universal Gates, Multilevel NAND/NOR realizations."
+          ],
+          [
+            "Minimization of Boolean functions: Karnaugh Map Method - Up to four Variables, Don’t Care Map Entries, Tabular Method.",
+            "Combinational Logic Circuits: Adders, Subtractors, Comparators, Multiplexers, Demultiplexers, Encoders, Decoders and Code converters, Hazards and Hazard Free Relations."
+          ],
+          [
+            "Sequential Circuits Fundamentals: Basic Architectural Distinctions between Combinational and Sequential circuits, SR Latch, Flip Flops: SR, JK, JK Master Slave, D and T Type Flip Flops, Excitation Table of all Flip Flops, Fundamentals of shift registers, ripple and decade counters."
+          ],
+          [
+            "Realization of Logic Gates Using Diodes & Transistors: AND, OR and NOT Gates using Diodes and Transistors.",
+            "DCTL, RTL, DTL, TTL, CML and CMOS Logic Families and its Comparison, standard TTL NAND Gate Analysis & characteristics, TTL open collector O/Ps, Tristate TTL, MOS & CMOS open drain and tristate outputs, CMOS transmission gate."
+          ],
+          [
+            "Integrated Circuits: Classification, chip size and circuit complexity, basic information of Op-amp, ideal and practical Op-amp, internal circuits, Op-amp characteristics, DC and AC Characteristics, 741 opamp and its features, modes of operation-inverting, non-inverting, differential."
+          ]
+        ]
+      },
+      {
+        "subject": "Natural Language Processing",
+        "timing": "13:30-14:20",
+        "code": "NLP",
+        "faculty": "Mr. M Saktivel",
+        "units": [
+          "UNIT - I: Finding the Structure of Words & Documents",
+          "UNIT - II: Syntax I - Parsing Natural Language",
+          "UNIT - III: Syntax II & Semantic Parsing I",
+          "UNIT - IV: Semantic Parsing II",
+          "UNIT - V: Language Modeling"
+        ],
+        "topics": [
+          [
+            "Finding the Structure of Words: Words and Their Components, Issues and Challenges, Morphological Models.",
+            "Finding the Structure of Documents: Introduction, Methods, Complexity of the Approaches, Performances of the Approaches, Features."
+          ],
+          [
+            "Syntax I: Parsing Natural Language, Treebanks: A Data-Driven Approach to Syntax, Representation of Syntactic Structure, Parsing Algorithms."
+          ],
+          [
+            "Syntax II: Models for Ambiguity Resolution in Parsing, Multilingual Issues.",
+            "Semantic Parsing I: Introduction, Semantic Interpretation, System Paradigms, Word Sense."
+          ],
+          [
+            "Semantic Parsing II: Predicate-Argument Structure, Meaning Representation Systems."
+          ],
+          [
+            "Language Modeling: Introduction, N-Gram Models, Language Model Evaluation, Bayesian Parameter Estimation, Language Model Adaptation, Language Models - Class Based, Variable Length, Bayesian Topic Based, Multilingual and Cross-Lingual Language Modeling."
+          ]
+        ]
+      },
+      {
+        "subject": "Software Testing Methodologies",
+        "timing": "14:20-15:10",
+        "code": "STM",
+        "faculty": "Mrs. Anju Gopi",
+        "units": ["Unit 1", "Unit 2", "Unit 3", "Unit 4", "Unit 5"],
+        "topics": [
+          [
+            "Introduction: Purpose of testing, Dichotomies, model for testing, consequences of bugs, taxonomy of bugs",
+            "Flow graphs and Path testing: Basics concepts of path testing, predicates, path predicates and achievable paths, path sensitizing, path instrumentation, application of path testing"
+          ],
+          [
+            "Transaction Flow Testing: transaction flows, transaction flow testing techniques",
+            "Data Flow testing: Basics of data flow testing, strategies in data flow testing, application of data flow testing",
+            "Domain Testing: domains and paths, Nice & ugly domains, domain testing, domains and interfaces testing, domain and interface testing, domains and testability"
+          ],
+          [
+            "Paths, Path products and Regular expressions: path products & path expression, reduction procedure, applications, regular expressions & flow anomaly detection",
+            "Logic Based Testing: overview, decision tables, path expressions, kv charts, specifications"
+          ],
+          [
+            "State, State Graphs and Transition testing: state graphs, good & bad state graphs, state testing, Testability tips"
+          ],
+          [
+            "Graph Matrices and Application: Motivational overview, matrix of graph, relations, power of a matrix, node reduction algorithm, building tools",
+            "(Student should be given an exposure to a tool like Jmeter/selenium/soapUI/Catalon)"
+          ]
+        ]
+      },
+      {
+        "subject": "Knowledge Representation and Reasoning",
+        "timing": "15:10-16:00",
+        "code": "KRR",
+        "faculty": "Mrs. G Sirisha",
+        "units": [
+          "UNIT - I: The Key Concepts & Logic",
+          "UNIT - II: Ontology",
+          "UNIT - III: Knowledge Representations",
+          "UNIT - IV: Processes & Contexts",
+          "UNIT - V: Knowledge Soup & Knowledge Acquisition"
+        ],
+        "topics": [
+          [
+            "The Key Concepts: Knowledge, Representation, Reasoning, Why knowledge representation and reasoning, Role of logic.",
+            "Logic: Historical background, Representing knowledge in logic, Varieties of logic, Name, Type, Measures, Unity Amidst diversity."
+          ],
+          [
+            "Ontology: Ontological categories, Philosophical background, Top-level categories, Describing physical entities, Defining abstractions, Sets, Collections, Types and Categories, Space and Time."
+          ],
+          [
+            "Knowledge Representations: Knowledge Engineering, Representing structure in frames, Rules and data, Object-oriented systems, Natural language Semantics, Levels of representation."
+          ],
+          [
+            "Processes: Times, Events and Situations, Classification of processes, Procedures, Processes and Histories, Concurrent processes, Computation, Constraint satisfaction.",
+            "Change Contexts: Syntax of contexts, Semantics of contexts, First-order reasoning in contexts, Modal reasoning in contexts, Encapsulating objects in contexts."
+          ],
+          [
+            "Knowledge Soup: Vagueness, Uncertainty, Randomness and Ignorance, Limitations of logic, Fuzzy logic, Nonmonotonic Logic, Theories, Models and the world, Semiotics.",
+            "Knowledge Acquisition and Sharing: Sharing Ontologies, Conceptual schema, Accommodating multiple paradigms, Relating different knowledge representations, Language patterns, Tools for knowledge acquisition."
+          ]
+        ]
+      }
+    ],
+    "Saturday": [
+      {
+        "subject": "Data Analytics/Natural Language Processing Lab",
+        "timing": "09:30-12:40",
+        "code": "DA/NLP Lab",
+        "faculty": "Mrs. Rajee Josan, Mrs. G Sirisha",
+        "units": [["DA Exp 1 - 6"], ["DA Exp 6 - 12"], ["NLP Exp 1 - 4"], ["NLP Exp 5 - 8"]],
+        "topics": [
+          [
+            "1. Data Preprocessing: a. Handling missing values, b. Noise detection and removal, c. Identifying data redundancy and elimination.",
+            "2. Implement any one imputation model.",
+            "3. Implement Linear Regression.",
+            "4. Implement Logistic Regression.",
+            "5. Implement Decision Tree Induction for classification.",
+            "6. Implement Random Forest Classifier."
+          ],
+          [
+            "7. Implement ARIMA on Time Series data.",
+            "8. Object segmentation using hierarchical-based methods.",
+            "9. Perform Visualization techniques (types of maps - Bar, Column, Line, Scatter, 3D Cubes, etc.).",
+            "10. Perform Descriptive analytics on healthcare data.",
+            "11. Perform Predictive analytics on Product Sales data.",
+            "12. Apply Predictive analytics for Weather forecasting."
+          ],
+          [
+            "1. Write a Python program to perform the following tasks on text: a) Tokenization, b) Stop word removal",
+            "2. Write a Python program to implement the Porter Stemmer algorithm for stemming",
+            "3. Write a Python program for: a) Word Analysis, b) Word Generation",
+            "4. Create a sample list of at least 5 words with ambiguous sense and write a Python program to implement Word Sense Disambiguation (WSD)"
+          ],
+          [
+            "5. Install NLTK toolkit and perform stemming",
+            "6. Create a sample list of at least 10 words for POS tagging and find the POS for any given word",
+            "7. Write a Python program to: a) Perform Morphological Analysis using the NLTK library, b) Generate n-grams using the NLTK N-Grams library, c) Implement N-Grams Smoothing",
+            "8. Using the NLTK package, convert an audio file to text and a text file to an audio file"
+          ]
+        ]
+      },
+      {
+        "subject": "Natural Language Processing",
+        "timing": "13:30-14:20",
+        "code": "NLP",
+        "faculty": "Mr. M Saktivel",
+        "units": [
+          "UNIT - I: Finding the Structure of Words & Documents",
+          "UNIT - II: Syntax I - Parsing Natural Language",
+          "UNIT - III: Syntax II & Semantic Parsing I",
+          "UNIT - IV: Semantic Parsing II",
+          "UNIT - V: Language Modeling"
+        ],
+        "topics": [
+          [
+            "Finding the Structure of Words: Words and Their Components, Issues and Challenges, Morphological Models.",
+            "Finding the Structure of Documents: Introduction, Methods, Complexity of the Approaches, Performances of the Approaches, Features."
+          ],
+          [
+            "Syntax I: Parsing Natural Language, Treebanks: A Data-Driven Approach to Syntax, Representation of Syntactic Structure, Parsing Algorithms."
+          ],
+          [
+            "Syntax II: Models for Ambiguity Resolution in Parsing, Multilingual Issues.",
+            "Semantic Parsing I: Introduction, Semantic Interpretation, System Paradigms, Word Sense."
+          ],
+          [
+            "Semantic Parsing II: Predicate-Argument Structure, Meaning Representation Systems."
+          ],
+          [
+            "Language Modeling: Introduction, N-Gram Models, Language Model Evaluation, Bayesian Parameter Estimation, Language Model Adaptation, Language Models - Class Based, Variable Length, Bayesian Topic Based, Multilingual and Cross-Lingual Language Modeling."
+          ]
+        ]
+      },
+      {
+        "subject": "Data Analytics",
+        "timing": "14:20-15:10",
+        "code": "DA",
+        "faculty": "Mr. S Srikanth",
+        "units": [
+          "UNIT - I: Data Management",
+          "UNIT - II: Data Analytics & Business Modeling",
+          "UNIT - III: Regression & Logistic Regression",
+          "UNIT - IV: Object Segmentation & Time Series Methods",
+          "UNIT - V: Data Visualization"
+        ],
+        "topics": [
+          [
+            "Data Management: Design Data Architecture and manage the data for analysis, understand various sources of Data like Sensors/Signals/GPS etc.",
+            "Data Quality (noise, outliers, missing values, duplicate data) and Data Processing."
+          ],
+          [
+            "Data Analytics: Introduction to Analytics, Introduction to Tools and Environment, Application of Modeling in Business, Databases & Types of Data and Variables.",
+            "Data Modeling Techniques, Missing Imputations, Need for Business Modeling."
+          ],
+          [
+            "Regression – Concepts, Blue property assumptions, Least Square Estimation, Variable Rationalization, and Model Building.",
+            "Logistic Regression: Model Theory, Model fit Statistics, Model Construction, Analytics applications to various Business Domains."
+          ],
+          [
+            "Object Segmentation: Regression Vs Segmentation – Supervised and Unsupervised Learning, Tree Building – Regression, Classification, Overfitting, Pruning and Complexity, Multiple Decision Trees.",
+            "Time Series Methods: Arima, Measures of Forecast Accuracy, STL approach, Extract features from generated model as Height, Average Energy etc and Analyze for prediction."
+          ],
+          [
+            "Data Visualization: Pixel-Oriented Visualization Techniques, Geometric Projection Visualization Techniques, Icon-Based Visualization Techniques, Hierarchical Visualization Techniques, Visualizing Complex Data and Relations."
+          ]
+        ]
+      },
+      {
+        "subject": "Counseling",
+        "timing": "15:10-16:00",
+        "code": "COUNC",
+        "faculty": "Mrs. K Sunanda Reddy",
+        "units": [[]],
+        "topics": [
+        ]
+      }
+    ]
+  },
+  "breaks": {
+    "lunch": "12:40-13:30",
+    "short": ["11:30-11:40"]
+  }
+}

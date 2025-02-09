@@ -1,0 +1,128 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'BR Firma', sans-serif;
+    box-sizing: border-box;
+    text-shadow: 2px 2px 0px rgba(0,0,0,0.4);
+    letter-spacing: 0.8px;
+    line-height: 1.5rem;
+  }
+  
+  body {
+    background: linear-gradient(to bottom, #1a1a1a, #333);
+    color: white;
+    font-family: 'BR Firma', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+  }
+  
+  .container {
+    width: 90%;
+    height: 90%;
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr;
+    gap: 10px;
+  }
+  
+  /* Header Section */
+  .header {
+    text-align: center;
+    position: relative;
+  }
+  
+  #greeting {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  #current-class-info {
+    font-size: 1.2rem;
+  }
+  
+  /* Center Section */
+  .center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  
+  #unit-display {
+    text-align: center;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  #topics-container {
+    padding: 0 10%;
+    margin-top: 20px;
+    text-align: justify;
+  }
+  
+  .navigation {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+    position: absolute;
+    /* top: 50%; */
+    /* transform: translateY(-50%); */
+  }
+  
+  .nav-btn {
+    background-color: transparent;
+    border: none;
+    color: transparent;
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  #prev-unit {
+    position: static;
+    height: 90vh;
+    top: 0;
+    left: 0;
+    width: 50%;
+    z-index: 10;
+  }
+  
+  #next-unit {
+    position: static;
+    height: 90vh;
+    top: 0;
+    right: 0;
+    width: 50%;
+    z-index: 10;
+  }
+  
+  .nav-btn:hover {
+    opacity: 0.5;
+  }
+  
+  /* Footer Section */
+  .footer {
+    text-align: right;
+    position: relative;
+  }
+  
+  #next-class-info {
+    font-size: 1.2rem;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  .fade-in {
+    animation: fadeIn 1s ease-in-out;
+  }

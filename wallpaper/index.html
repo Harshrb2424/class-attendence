@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Class Scheduler</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Top Section -->
+    <div class="header">
+      <div id="greeting"></div>
+      <div id="current-class-info">
+        <p id="subject-name">Subject Name</p>
+        <p id="subject-code"></p>
+        <p id="faculty"></p>
+        <p id="timing"></p>
+      </div>
+    </div>
+
+    <!-- Center Section -->
+    <div class="center">
+      <div id="unit-display">
+        <h2 id="active-unit">III CSM B</h2>
+        <div id="topics-container"></div>
+      </div>
+      <div class="navigation">
+        <button id="prev-unit" class="nav-btn">&#10094;</button>
+        <button id="next-unit" class="nav-btn">&#10095;</button>
+      </div>
+    </div>
+
+    <!-- Bottom Right Section -->
+    <div class="footer">
+      <div id="next-class-info">
+        <p>Next Class:</p>
+        <p id="next-subject-code"></p>
+        <p id="next-timing"></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="./data.json" type="application/json"></script>
+  <script src="./script.js"></script>
+</body>
+</html>
