@@ -96,7 +96,7 @@ function initializeSchedule(jsonData) {
         document.getElementById("next-subject-code").textContent = `${nextClass.code}`;
         document.getElementById("next-timing").textContent = `${nextClass.timing}`;
       } else {
-        document.getElementById("next-subject-code").textContent = "No More Classes Today";
+        document.getElementById("next-subject-code").textContent = "--";
         document.getElementById("next-timing").textContent = "";
       }
   
